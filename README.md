@@ -169,15 +169,15 @@ da.info()
 | 14  | trip_id        |   6699 non-null    | int64   |
 
 # Data Analysis
- ### Description of data
-  Description of a data plays a vital role in data analysis this method helps us to find the statstical value (i.e.,, mean, standard deviation, min, max and etc..,)
+ ### Description of data and Value count
+  Description of a data and value count plays a vital role in data analysis.describe() method helps us to find the statstical value (i.e.,, mean, standard deviation, min, max and etc..,) and value_count() help us to find the number of repeatation in datasets
 
   ```python
    #describe() method helps us to find the description of the data in dataframe(i.e count, mean, std, etc..,)
     da['distance'].describe()
 
   ```
-  | description      |   value       |
+  | Description      |   value       |
   | ----- |  ------------ |
   | count |   6699.000000 |
   | mean  |    955.198388 |
@@ -188,3 +188,25 @@ da.info()
   | 75%   |   1081.000000 |
   | max   |   1500.000000 |
   | Name: distance | dtype: float64 |
+
+  
+  ```python
+  #value_count() method helps us to find the total number of repeatation in a particular dataset
+   city_count=da['city'].value_counts()
+   print(city_count)
+
+  ```
+ | city                               |             |
+ | -----                              |--------     |
+ | Salt Lake City, UT                 |       94    |
+ | Washington, DC (Metropolitan Area) |       94    |
+ | Dallas/Fort Worth, TX              |       94    |
+ | Minneapolis/St. Paul, MN           |   94 |
+ | Miami, FL (Metropolitan Area)      |   94 |
+ |                                    |  .. |
+ | Wichita, KS                        |    1 |
+ | Bozeman, MT                        |    1 |
+ | Tallahassee, FL                    |     1   |
+ | Pensacola, FL                      |     1   |
+ | Everett, WA                        |    1    |
+ |Name: count, Length: 91, dtype: int64 |
