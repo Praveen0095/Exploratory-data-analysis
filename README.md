@@ -63,7 +63,13 @@ da = pd.read_csv('Consumer_Airfare_Report_Table.csv')
 
 # Displaying the columns in the dataframe
 da.columns
-
+```
+Index(['Year', 'quarter', 'citymarketid', 'city', 'markets', 'cur_passengers',
+       'cur_fare', 'cur_yield', 'distance', 'ly_passengers', 'ly_fare',
+       'ly_yield', 'ly_distance', 'Geocoded_City', 'trip_id'],
+      dtype='object') 
+      
+```python
 # Display the first few rows of the dataframe
 print(da.head(10))
 
@@ -120,6 +126,7 @@ pd.isnull(da).sum()
 | Geocoded_City  |     0   |
 | tbl2pk         |     0   |
 
+  ### Changing the datatype of a column
 ```python
 
 #changing a datatypes of an column
@@ -160,3 +167,7 @@ da.info()
 | 12  | ly_distance    |   6699 non-null    | float64 |
 | 13  | Geocoded_City  |   6699 non-null    | object  |
 | 14  | trip_id        |   6699 non-null    | int64   |
+
+##Data Analysis
+ ### Description of data
+  Description of a data plays a vital role in data analysis this method helps us to find the statstical value (i.e.,, mean, standard deviation, min, max and etc..,)
