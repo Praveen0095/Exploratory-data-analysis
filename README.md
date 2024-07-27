@@ -21,8 +21,14 @@ In this project, we perform exploratory data analysis on a dataset containing in
 
 ## Dataset
 The dataset used in this project is a CSV file named `Consumer_Airfare_Report_Table.csv`. It contains the following columns:
-- `Airfare`: The cost of airfare.
-- `Passengers`: The number of passengers.
+- `Year`: year of trip.
+- `citymaretid`: A unique id of the city
+- `city`: The city where the trips has taken.
+- `distance`: The distance covered in a trip.
+- `cur_fare`: The cost of current airfare for year.
+- `cur_passengers`: The number of current passengers.
+- `ly_fare`: The cost of last year airfare.
+- `ly_passengers`: The number of Lastyear passengers.
 
 ## Setup
 To get started with this project, follow these steps:
