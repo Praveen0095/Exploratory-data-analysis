@@ -91,7 +91,7 @@ print(df.isnull().sum())
 | tbl2pk         |      0 |
 
 
-```
+```python
 
 # Data Cleaning
 As we did our finding on the number of null values/ missing values in this dataframe. We proceed with the removal of null vales from the dataframe.
