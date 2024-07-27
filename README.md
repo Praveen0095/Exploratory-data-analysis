@@ -135,7 +135,7 @@ da['distance'].dtypes
 ```
    dtype('int32')
    
-  ### Editing the column name
+  ### Changing a  column name
 ```python 
 #Renaming a column
 da.rename(columns= {'tbl2pk': 'trip_id'}, inplace=True)
@@ -143,3 +143,20 @@ da.rename(columns= {'tbl2pk': 'trip_id'}, inplace=True)
 #After the convertion of the datatype
 da.info()
 ```
+|  #  |  Column        |     Non-Null Count | Dtype   |  
+| --- | ------         |  --------------    | -----   |
+|  0  |  Year          |   6699 non-null    | int64   | 
+|  1  | quarter        |   6699 non-null    | int64   | 
+|  2  | citymarketid   |   6699 non-null    | int64   | 
+|  3  | city           |   6699 non-null    | object  | 
+|  4  | markets        |   6699 non-null    | int64   | 
+|  5  | cur_passengers |   6699 non-null    | int64   |
+|  6  | cur_fare       |   6699 non-null    | float64 |
+|  7  | cur_yield      |   6699 non-null    | float64 |
+|  8  | distance       |   6699 non-null    | int32   |
+|  9  | ly_passengers  |   6699 non-null    | float64 |
+| 10  | ly_fare        |   6699 non-null    | float64 |
+| 11  | ly_yield       |   6699 non-null    | float64 |
+| 12  | ly_distance    |   6699 non-null    | float64 |
+| 13  | Geocoded_City  |   6699 non-null    | object  |
+| 14  | trip_id        |   6699 non-null    | int64   |
