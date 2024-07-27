@@ -92,7 +92,7 @@ print(df.isnull().sum())
 
 
 # Data Cleaning
- ## Removal of NULL values
+ ### Removal of NULL values
 
 ```python
 # Removal of null values
@@ -135,7 +135,7 @@ da['distance'].dtypes
 ```
    dtype('int32')
    
-  ## Editing the column name
+  ### Editing the column name
 ```python 
 #Renaming a column
 da.rename(columns= {'tbl2pk': 'trip_id'}, inplace=True)
