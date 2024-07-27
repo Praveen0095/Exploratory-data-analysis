@@ -70,6 +70,8 @@ print(da.head(10))
 
 # Check for missing values
 print(df.isnull().sum())
+```
+
 | Column         |  Count |
 |--------------- |------- |
 | Year           |      0 |
