@@ -29,8 +29,8 @@ To get started with this project, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/eda-project.git
-    cd eda-project
+    git clone https://github.com/Praveen0095/Exploratory-data-analysis.git
+    cd Exploratory-data-analysis
     ```
 
 2. Install the required Python packages:
