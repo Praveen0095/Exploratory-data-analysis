@@ -29,6 +29,9 @@ The dataset used in this project is a CSV file named `Consumer_Airfare_Report_Ta
 - `cur_passengers`: The number of current passengers.
 - `ly_fare`: The cost of lastyear airfare.
 - `ly_passengers`: The number of lastyear passengers.
+- `Geocoded_city`: Geographical code of a city.
+- `cur_yield`: Yield achieved in current year.
+- `ly_yield`: yield achieved in last year
 
 ## Setup
 To get started with this project, follow these steps:
@@ -67,10 +70,29 @@ print(da.head(10))
 
 # Check for missing values
 print(df.isnull().sum())
+| Column         |  Count |
+|--------------- |------- |
+| Year           |      0 |
+| quarter        |      0 |
+| citymarketid   |      0 |
+| city           |      0 |
+| markets        |      0 | 
+| cur_passengers |      0 |
+| cur_fare       |      0 |
+| cur_yield      |      0 |
+| distance       |      0 |
+| ly_passengers  |      3 |
+| ly_fare        |      3 |
+| ly_yield       |      3 |
+| ly_distance    |      3 |
+| Geocoded_City  |   1326 |
+| tbl2pk         |      0 |
+
+
 ```
 
 # Data Cleaning
-As we did our finding on the number of null values/ missing values in this dataframe. We proceeds with the removal of null vales from the dataframe.
+As we did our finding on the number of null values/ missing values in this dataframe. We proceed with the removal of null vales from the dataframe.
 
 ```python
 # Removal of null values
@@ -78,3 +100,6 @@ da.dropna(inplace=True)
 
 # Displaying the sum of null values in the dataframe after the operation of removal
 pd.isnull(da).sum()
+
+
+
