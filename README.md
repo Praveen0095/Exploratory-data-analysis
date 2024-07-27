@@ -168,6 +168,12 @@ da.info()
 | 13  | Geocoded_City  |   6699 non-null    | object  |
 | 14  | trip_id        |   6699 non-null    | int64   |
 
-##Data Analysis
+# Data Analysis
  ### Description of data
   Description of a data plays a vital role in data analysis this method helps us to find the statstical value (i.e.,, mean, standard deviation, min, max and etc..,)
+
+  ```python
+   #describe() method helps us to find the description of the data in dataframe(i.e count, mean, std, etc..,)
+    da['distance'].describe()
+
+  ```
