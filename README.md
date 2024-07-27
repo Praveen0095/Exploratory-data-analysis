@@ -92,7 +92,7 @@ print(df.isnull().sum())
 
 
 # Data Cleaning
-As we did our finding on the number of null values/ missing values in this dataframe. We proceed with the removal of null vales from the dataframe.
+ ## Removal of NULL values
 
 ```python
 # Removal of null values
@@ -133,6 +133,13 @@ da['distance'] = da['distance'].astype('int')
 da['distance'].dtypes
 
 ```
-```
    dtype('int32')
+   
+  ## Editing the column name
+```python 
+#Renaming a column
+da.rename(columns= {'tbl2pk': 'trip_id'}, inplace=True)
+
+#After the convertion of the datatype
+da.info()
 ```
