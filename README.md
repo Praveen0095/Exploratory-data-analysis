@@ -20,7 +20,7 @@ Welcome to the Exploratory Data Analysis (EDA) project! This repository contains
 In this project, we perform exploratory data analysis on a dataset containing information about airfare and passenger numbers. The aim is to understand the relationship between these variables and identify key trends and insights.
 
 ## Dataset
-The dataset used in this project is a CSV file named `airfare_passenger_data.csv`. It contains the following columns:
+The dataset used in this project is a CSV file named `Consumer_Airfare_Report_Table.csv`. It contains the following columns:
 - `Airfare`: The cost of airfare.
 - `Passengers`: The number of passengers.
 
@@ -50,10 +50,10 @@ We begin by loading the dataset and performing initial exploration to understand
 import pandas as pd
 
 # Load the dataset
-df = pd.read_csv('airfare_passenger_data.csv')
+da = pd.read_csv('Consumer_Airfare_Report_Table.csv')
 
 # Display the first few rows of the dataframe
-print(df.head())
+print(da.head(10))
 
 # Check for missing values
 print(df.isnull().sum())
