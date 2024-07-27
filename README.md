@@ -120,4 +120,19 @@ pd.isnull(da).sum()
 | Geocoded_City  |     0   |
 | tbl2pk         |     0   |
 
+```python
 
+#changing a datatypes of an column
+# As the distance is measured in Nm. The decimal value can be negligible
+# The intial datatype of the distance is float 
+# This method helps us to convert the float datasets into integer datasets
+da['distance'] = da['distance'].astype('int')
+
+
+#With the help of dtypes function we can find the datatype of particular column
+da['distance'].dtypes
+
+```
+```
+   dtype('int32')
+```
