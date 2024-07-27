@@ -25,10 +25,10 @@ The dataset used in this project is a CSV file named `Consumer_Airfare_Report_Ta
 - `citymaretid`: A unique id of the city
 - `city`: The city where the trips has taken.
 - `distance`: The distance covered in a trip.
-- `cur_fare`: The cost of current airfare for year.
+- `cur_fare`: The cost of current airfare.
 - `cur_passengers`: The number of current passengers.
-- `ly_fare`: The cost of last year airfare.
-- `ly_passengers`: The number of Lastyear passengers.
+- `ly_fare`: The cost of lastyear airfare.
+- `ly_passengers`: The number of lastyear passengers.
 
 ## Setup
 To get started with this project, follow these steps:
@@ -58,8 +58,23 @@ import pandas as pd
 # Load the dataset
 da = pd.read_csv('Consumer_Airfare_Report_Table.csv')
 
+# Displaying the columns in the dataframe
+da.columns
+
 # Display the first few rows of the dataframe
 print(da.head(10))
 
+
 # Check for missing values
 print(df.isnull().sum())
+```
+
+# Data Cleaning
+As we did our finding on the number of null values/ missing values in this dataframe. We proceeds with the removal of null vales from the dataframe.
+
+```python
+# Removal of null values
+da.dropna(inplace=True)
+
+# Displaying the sum of null values in the dataframe after the operation of removal
+pd.isnull(da).sum()
