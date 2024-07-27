@@ -177,9 +177,9 @@ da.info()
     da['distance'].describe()
 
   ```
-
-  | count |   6699.000000 |
+  | description      |   value       |
   | ----- |  ------------ |
+  | count |   6699.000000 |
   | mean  |    955.198388 |
   | std   |    196.314161 |
   | min   |    334.000000 |
