@@ -91,8 +91,6 @@ print(df.isnull().sum())
 | tbl2pk         |      0 |
 
 
-```python
-
 # Data Cleaning
 As we did our finding on the number of null values/ missing values in this dataframe. We proceed with the removal of null vales from the dataframe.
 
@@ -103,5 +101,23 @@ da.dropna(inplace=True)
 # Displaying the sum of null values in the dataframe after the operation of removal
 pd.isnull(da).sum()
 
+```
+| Column         |  count  |
+| -------------- | ------- |
+| Year           |     0   |
+| quarter        |     0   |
+| citymarketid   |     0   |
+| city           |     0   |
+| markets        |     0   |
+| cur_passengers |     0   |
+| cur_fare       |     0   |
+| cur_yield      |     0   |
+| distance       |     0   |
+| ly_passengers  |     0   |
+| ly_fare        |     0   |
+| ly_yield       |     0   |
+| ly_distance    |     0   |
+| Geocoded_City  |     0   |
+| tbl2pk         |     0   |
 
 
