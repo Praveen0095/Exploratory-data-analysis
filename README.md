@@ -230,7 +230,43 @@ da.info()
        city_name3 = 'Washington, DC (Metropolitan Area)'
        city_name4 = 'Los Angeles, CA (Metropolitan Area)'
    ```
-   After assigning variables for the cities. We have to filter out the Airfare(Lastyear and Currentyear) for the selected ciies.After filtering out the data we then proceed with finding the mean of the airfare.
 
-    ```python
-       
+   After assigning variables for the cities. We have to filter out the Airfare(Lastyear and Currentyear) for the selected ciies.
+   
+   ```python
+        #Filtering current fare from the dataframe frame for the chosen city
+        city_fares1 = da[da['city'] == city_name1]['cur_fare']
+        city_fares2 = da[da['city'] == city_name2]['cur_fare']
+        city_fares3 = da[da['city'] == city_name3]['cur_fare']
+        city_fares4 = da[da['city'] == city_name4]['cur_fare']
+
+
+       # Filtering last year fare from the dataframe frame for the chosen city
+        city_fares1_ly= da[da['city'] == city_name1]['ly_fare']
+        city_fares2_ly= da[da['city'] == city_name2]['ly_fare']
+        city_fares3_ly= da[da['city'] == city_name3]['ly_fare']
+        city_fares4_ly= da[da['city'] == city_name4]['ly_fare']
+
+   ```
+   After filtering out the data we then proceed with finding the mean of the airfare.
+
+   ```python
+      # Calculate the mean fare for the chosen city
+        mean_cur_fare1= city_fares1.mean()
+        mean_cur_fare2= city_fares2.mean()
+        mean_cur_fare3= city_fares3.mean()
+        mean_cur_fare4= city_fares4.mean()
+
+      #Caluculation of mean fare for the chosen city for last year
+        mean_ly_fare1= city_fares1_ly.mean()
+        mean_ly_fare2= city_fares2_ly.mean()
+        mean_ly_fare3= city_fares3_ly.mean()
+        mean_ly_fare4= city_fares4_ly.mean()
+
+     #storing the calculated values in the form of dictionary
+       cur_faretable = {'City': [city_name1,city_name2,city_name3,city_name4], 'Mean': [mean_cur_fare1,mean_cur_fare2,mean_cur_fare3,mean_cur_fare4],'Type':['Current Fare'] * 4}
+       ly_faretable = {'City': [city_name1,city_name2,city_name3,city_name4], 'Mean': [mean_ly_fare1,mean_ly_fare1,mean_ly_fare3,mean_ly_fare4],'Type':['Lastyear Fare'] * 4}
+       print(cur_faretable)
+       print(ly_faretable)
+   ```
+  
