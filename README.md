@@ -64,10 +64,10 @@ da = pd.read_csv('Consumer_Airfare_Report_Table.csv')
 # Displaying the columns in the dataframe
 da.columns
 ```
-`Index(['Year', 'quarter', 'citymarketid', 'city', 'markets', 'cur_passengers',
+Index(['Year', 'quarter', 'citymarketid', 'city', 'markets', 'cur_passengers',
        'cur_fare', 'cur_yield', 'distance', 'ly_passengers', 'ly_fare',
        'ly_yield', 'ly_distance', 'Geocoded_City', 'trip_id'],
-      dtype='object') `
+      dtype='object') 
       
 ```python
 # Display the first few rows of the dataframe
@@ -201,12 +201,36 @@ da.info()
  | Salt Lake City, UT                 |       94    |
  | Washington, DC (Metropolitan Area) |       94    |
  | Dallas/Fort Worth, TX              |       94    |
- | Minneapolis/St. Paul, MN           |   94 |
- | Miami, FL (Metropolitan Area)      |   94 |
- |                                    |  .. |
- | Wichita, KS                        |    1 |
- | Bozeman, MT                        |    1 |
- | Tallahassee, FL                    |     1   |
- | Pensacola, FL                      |     1   |
- | Everett, WA                        |    1    |
+ | Minneapolis/St. Paul, MN           |       94    |
+ | Miami, FL (Metropolitan Area)      |       94    |
+ |                                    |       ..    |
+ | Wichita, KS                        |       1     |
+ | Bozeman, MT                        |       1     |
+ | Tallahassee, FL                    |       1     |
+ | Pensacola, FL                      |       1     |
+ | Everett, WA                        |       1     |
  |Name: count, Length: 91, dtype: int64 |
+
+### Analysis based on Fares
+   To analyse the data based on the airfare we need the following dataset from the dataframe
+   `ly-fare`: The cost of last year airfare
+   `cur_fare`: The cost of current year airfare
+
+   As the datframe has more than 90 city. We proceed by selecting Four random city from the datframe for easy computation and Handling .The randomly selected city are 
+   
+   `New Orleans, LA`
+   `Miami, FL (Metropolitan Area)`
+   `Washington, DC (Metropolitan Area)`
+   `Los Angeles, CA (Metropolitan Area)`
+
+   ```python
+       # Assigning variables for city
+       city_name1 = 'New Orleans, LA'
+       city_name2 = 'Miami, FL (Metropolitan Area)'
+       city_name3 = 'Washington, DC (Metropolitan Area)'
+       city_name4 = 'Los Angeles, CA (Metropolitan Area)'
+   ```
+   After assigning variables for the cities. We have to filter out the Airfare(Lastyear and Currentyear) for the selected ciies.After filtering out the data we then proceed with finding the mean of the airfare.
+
+    ```python
+       
