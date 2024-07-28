@@ -270,3 +270,7 @@ da.info()
        print(ly_faretable)
    ```
   
+   ```text
+      {'City': ['New Orleans, LA', 'Miami, FL (Metropolitan Area)', 'Washington, DC (Metropolitan Area)', 'Los Angeles, CA (Metropolitan Area)'], 'Mean': [171.97744680851062, 170.27712765957446, 193.91765957446808, 190.49563829787235], 'Type': ['Current Fare', 'Current Fare', 'Current Fare', 'Current Fare']}
+      {'City': ['New Orleans, LA', 'Miami, FL (Metropolitan Area)', 'Washington, DC (Metropolitan Area)', 'Los Angeles, CA (Metropolitan Area)'], 'Mean': [170.49170212765958, 170.49170212765958, 193.35659574468082, 189.38212765957448], 'Type': ['Lastyear Fare', 'Lastyear Fare', 'Lastyear Fare', 'Lastyear Fare']}
+   ```
