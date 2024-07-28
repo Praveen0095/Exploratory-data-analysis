@@ -64,10 +64,10 @@ da = pd.read_csv('Consumer_Airfare_Report_Table.csv')
 # Displaying the columns in the dataframe
 da.columns
 ```
-Index(['Year', 'quarter', 'citymarketid', 'city', 'markets', 'cur_passengers',
+`Index(['Year', 'quarter', 'citymarketid', 'city', 'markets', 'cur_passengers',
        'cur_fare', 'cur_yield', 'distance', 'ly_passengers', 'ly_fare',
        'ly_yield', 'ly_distance', 'Geocoded_City', 'trip_id'],
-      dtype='object') 
+      dtype='object') `
       
 ```python
 # Display the first few rows of the dataframe
