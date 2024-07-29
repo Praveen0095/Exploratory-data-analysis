@@ -19,7 +19,7 @@ Welcome to the Exploratory Data Analysis (EDA) project! This repository contains
 ## Introduction
 In this project, we perform exploratory data analysis on a dataset containing information about airfare and passenger numbers. The aim is to understand the relationship between these variables and identify key trends and insights.
 
-<img> src=https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fcommercial-airplane&psig=AOvVaw1IPaZO-DWNnst-YixLUZlR&ust=1722355442532000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNDX35XQzIcDFQAAAAAdAAAAABAE </img>
+![image](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Fcommercial-airplane&psig=AOvVaw1IPaZO-DWNnst-YixLUZlR&ust=1722355442532000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNDX35XQzIcDFQAAAAAdAAAAABAE)
 
 ## Dataset
 The dataset used in this project is a CSV file named `Consumer_Airfare_Report_Table.csv`. It contains the following columns:
