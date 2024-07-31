@@ -9,12 +9,10 @@ Welcome to the Exploratory Data Analysis (EDA) project! This repository contains
 - [Data Exploration](#data-exploration)
 - [Data Cleaning](#data-cleaning)
 - [Data Analysis](#data-analysis)
-- [Feature Engineering](#feature-engineering)
-- [Modeling](#modeling)
 - [Conclusion](#conclusion)
 - [Future Work](#future-work)
-- [Contributing](#contributing)
-- [License](#license)
+- [Contribution](#contribution)
+
 
 ## Introduction
 In this project, we perform exploratory data analysis on a dataset containing information about airfare and passenger numbers. The aim is to understand the relationship between these variables and identify key trends and insights.
@@ -302,4 +300,160 @@ da.info()
     for bars in dx.containers:
       dx.bar_label(bars)
   ```
-  <img src="https://github.com/user-attachments/assets/9190f716-5e32-4bf1-acc6-e8cab93d8c74" width="900" height="800">
+  <img src="https://github.com/user-attachments/assets/9190f716-5e32-4bf1-acc6-e8cab93d8c74" width="1200" height="900">
+
+  From the above graph, We can draw that the mean of currentyear airfare has increased nearly by 1% than the lastyear airfare.As this information is not sufficent to draw the conclusion so we proceed with comparing the number of passengers on lastyear and currentyear.
+
+  We proceed with the same method we followed to obtain the mean of airfare.
+
+  ```python
+     ds1=pd.DataFrame(ly_passenger)
+     ds2=pd.DataFrame(cur_passenger)
+     ds = pd.concat([ds1, ds2])
+
+     # Plotting the combined bar graph
+     plt.figure(figsize=(15, 6))
+
+     # Plot the  bar plot
+     ex=sns.barplot(x='City', y='Mean', hue='Type', data=ds)
+
+     # Adding title and labels
+     plt.title('Comparison of Passengers by City')
+     plt.xlabel('City')
+     plt.ylabel('Passengers')
+     for bars in ex.containers:
+       ex.bar_label(bars)
+  ```
+<img src="https://github.com/user-attachments/assets/4371ddcc-7d95-4e42-b5aa-1fbdf96a88c1" width="1200" height="900">
+
+From the above graph we can say that the number of passengers on current year has significantly increased on comparing with the last year passengers.As this grapgh also doesnt give us any clue about the relation between the passengers and airfare.
+
+In order to get more precise result we Select a city which is " New orelans " and we compare the airfare and passengers count on different years such as(2007,2008,2009).Ro prove whether there is any relation between the airfare and passengers count 
+
+```python
+   #Filtering out the sum of Passengers for the particular year
+   Passenger_cur1 = da[(da['Year'] == 2007) & (da['city'] == 'New Orleans, LA')]['cur_passengers'].sum()
+   Passenger_cur2= da[(da['Year'] == 2008) & (da['city'] == 'New Orleans, LA')]['cur_passengers'].sum()
+   Passenger_cur3= da[(da['Year'] == 2009) & (da['city'] == 'New Orleans, LA')]['cur_passengers'].sum()
+
+   #storing the values in the form of dictionaries
+   sr1={'City':['New Orleans, LA'],'Passengers':[Passenger_cur1],'Year':[2007]}
+   sr2={'City':['New Orleans, LA'],'Passengers':[Passenger_cur2],'Year':[2008]}
+   sr3={'City':['New Orleans, LA'],'Passengers':[Passenger_cur3],'Year':[2009]}
+
+   #Converting dictionaries to datframe
+   dr1=pd.DataFrame(sr1)
+   dr2=pd.DataFrame(sr2)
+   dr3=pd.DataFrame(sr3)
+
+   plt.figure(figsize=(9, 6))
+
+   #with the help of concat() we can combine two or more dataframe 
+   dr=pd.concat([dr1,dr2,dr3])
+
+
+   wx=sns.barplot(x='Year',y='Passengers',hue='Year',data=dr,palette='viridis')
+
+   #Adding title and labels
+   plt.title('Comparison of Passengers by year')
+   plt.xlabel('Year')
+   plt.ylabel('Passengers')
+   for bars in wx.containers:
+     wx.bar_label(bars)
+```
+<img src="https://github.com/user-attachments/assets/1e77d7ae-f011-4c5f-807c-17cac525b829" width="1200" height="900">
+
+```python
+   #Filtering the mean value of fares for the particular year
+   fares1_cur = da[(da['Year'] == 2007) & (da['city'] == 'New Orleans, LA')]['cur_fare'].mean()
+   fares2_cur = da[(da['Year'] == 2008) & (da['city'] == 'New Orleans, LA')]['cur_fare'].mean()
+   fares3_cur = da[(da['Year'] == 2009) & (da['city'] == 'New Orleans, LA')]['cur_fare'].mean()
+
+   #storing the values as a dictionaries
+   tr1={'City':['New Orleans, LA'],'Fares':[fares1_cur],'Year':[2007]}
+   tr2={'City':['New Orleans, LA'],'Fares':[fares2_cur],'Year':[2008]}
+   tr3={'City':['New Orleans, LA'],'Fares':[fares3_cur],'Year':[2009]}
+
+   #converting dictionaries to dataframe
+   pr1=pd.DataFrame(tr1)
+   pr2=pd.DataFrame(tr2)
+   pr3=pd.DataFrame(tr3)
+
+   #combining the dataframe with the help of concat() method
+   plt.figure(figsize=(9, 8))
+   tr=pd.concat([pr1,pr2,pr3])
+
+
+   sx=sns.barplot(x='Year',y='Fares',hue='Year',data=tr,palette='viridis')
+
+   #Adding title and label
+   plt.title('Comparison of Fares by year')
+   plt.xlabel('Year')
+   plt.ylabel('Fares')
+   for bars in sx.containers:
+      sx.bar_label(bars)
+```
+<img src="https://github.com/user-attachments/assets/2b2d7469-136f-45f2-8f19-7547d83487b8" width="1200" height="900">
+
+As This graph also prove that there is no relation with the airfare and passenger's count.
+
+We calculate the correlation of the two datasets.Correlation is a statistical measure that expresses the extent to which two variables are linearly related (meaning they change together at a constant rate). It's a common tool for describing simple relationships without making a statement about cause and effect.
+
+```python
+   correlation = da['cur_fare'].corr(da['cur_passengers'])
+   print(f'Correlation between Airfare and Passengers: {correlation}')
+```
+```text
+   Correlation between Airfare and Passengers: 0.1735046284579055
+```
+
+
+
+# Conclusion
+
+The positive correlation identified in our analysis indicates that as one variable increases, the other variable tends to increase as well. This relationship suggests a direct association between the two variables, implying that changes in one variable are systematically related to changes in the other. While the correlation does not imply causation, it provides valuable insights into the strength and direction of the relationship, which can inform further research and decision-making. Understanding this positive correlation allows for better predictions and strategic planning based on the observed patterns in the data.
+
+a positive correlation between two variables means that they tend to increase together, but it doesn't necessarily imply that one variable causes the other to change. Other factors may also be responsible for the observed changes. 
+
+
+# Future Work
+
+Given the positive correlation between passenger count and airfare, future research should aim to understand this unexpected relationship. Key areas for investigation include:
+
+## Causal Analysis:
+
+  Experimental Studies: Conduct experiments to manipulate airfare and observe changes in passenger count, establishing if higher fares cause higher passenger counts.
+  
+  Longitudinal Studies: Track airfare and passenger count over time to determine the causality direction.
+  
+## Investigating Confounding Variables:
+
+Identify other factors (e.g., economic conditions, seasonal effects, marketing strategies) that might influence both airfare and passenger count.
+
+## Market Segmentation:
+
+Analyze different market segments (e.g., business vs. leisure travelers) to see if the correlation varies across groups.
+
+## Mechanistic Studies:
+
+Study underlying mechanisms, such as perceived value, customer preferences, and service quality, that might explain the positive correlation.
+
+## Replication and Validation:
+
+Replicate the study in different regions or times to verify the robustness of the findings.
+
+## Predictive Modeling:
+
+Develop models to predict passenger count based on changes in airfare and other relevant variables.
+
+## Interdisciplinary Research:
+
+Collaborate with economists, sociologists, and marketing experts to gain a comprehensive understanding of the factors driving this correlation.
+
+By exploring these areas, researchers can better understand the factors contributing to the positive correlation and develop strategies for optimizing pricing and increasing passenger numbers.
+
+# Contribution 
+  Data: `kaggle.com/datasets`
+  Books: ` "A Python Data Analyst's Toolkit" by Gayathri Rajagopalan`
+
+
