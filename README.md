@@ -277,3 +277,29 @@ da.info()
       {'City': ['New Orleans, LA', 'Miami, FL (Metropolitan Area)', 'Washington, DC (Metropolitan Area)', 'Los Angeles, CA (Metropolitan Area)'], 'Mean': [171.97744680851062, 170.27712765957446, 193.91765957446808, 190.49563829787235], 'Type': ['Current Fare', 'Current Fare', 'Current Fare', 'Current Fare']}
       {'City': ['New Orleans, LA', 'Miami, FL (Metropolitan Area)', 'Washington, DC (Metropolitan Area)', 'Los Angeles, CA (Metropolitan Area)'], 'Mean': [170.49170212765958, 170.49170212765958, 193.35659574468082, 189.38212765957448], 'Type': ['Lastyear Fare', 'Lastyear Fare', 'Lastyear Fare', 'Lastyear Fare']}
    ```
+  We used dictionary to store our values based on columns(city,mean).We calculated mean of airfare for current year and last year of a city to compare and to determine whether there is changes between them.
+  The stored dictionaries is then converted to dataframe for to plot in the graph using matplotlib and seaborn module.
+
+  ```python
+      import matplotlib.pyplot as plt
+      import seaborn as sns
+
+     #converting the dictionaries to dataframes
+     df1=pd.DataFrame(ly_faretable)
+     df2=pd.DataFrame(cur_faretable)
+     df = pd.concat([df1, df2])
+
+     # Plotting the combined bar graph
+     plt.figure(figsize=(15, 7))
+
+    # Plot the  bar plot
+    dx=sns.barplot(x='City', y='Mean', hue='Type', data=df)
+
+    # Adding title and labels
+    plt.title('Comparison of Fares by City')
+    plt.xlabel('City')
+    plt.ylabel('Fare')
+    for bars in dx.containers:
+      dx.bar_label(bars)
+  ```
+  <img src="https://github.com/user-attachments/assets/9190f716-5e32-4bf1-acc6-e8cab93d8c74" width="900" height="800">
