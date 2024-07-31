@@ -328,7 +328,7 @@ da.info()
 
 From the above graph we can say that the number of passengers on current year has significantly increased on comparing with the last year passengers.As this grapgh also doesnt give us any clue about the relation between the passengers and airfare.
 
-In order to get more precise result we Select a city which is " New orelans " and we compare the airfare and passengers count on different years such as(2007,2008,2009).Ro prove whether there is any relation between the airfare and passengers count 
+In order to get more precise result we Select a city from the dataset city which is " New orelans " and we compare the airfare and passengers count based on different years such as(2007,2008,2009).To prove whether there is any relation between the airfare and passengers count 
 
 ```python
    #Filtering out the sum of Passengers for the particular year
