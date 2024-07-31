@@ -300,7 +300,7 @@ da.info()
     for bars in dx.containers:
       dx.bar_label(bars)
   ```
-  <img src="https://github.com/user-attachments/assets/9190f716-5e32-4bf1-acc6-e8cab93d8c74" width="1200" height="1200">
+  <img src="https://github.com/user-attachments/assets/9190f716-5e32-4bf1-acc6-e8cab93d8c74" width="1000" height="1000">
 
   From the above graph, We can draw that the mean of currentyear airfare has increased nearly by 1% than the lastyear airfare.As this information is not sufficent to draw the conclusion so we proceed with comparing the number of passengers on lastyear and currentyear.
 
