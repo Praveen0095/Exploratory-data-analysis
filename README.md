@@ -324,7 +324,7 @@ da.info()
      for bars in ex.containers:
        ex.bar_label(bars)
   ```
-<img src="https://github.com/user-attachments/assets/4371ddcc-7d95-4e42-b5aa-1fbdf96a88c1" width="1200" height="1200">
+<img src="https://github.com/user-attachments/assets/4371ddcc-7d95-4e42-b5aa-1fbdf96a88c1" width="1000" height="500">
 
 From the above graph we can say that the number of passengers on current year has significantly increased on comparing with the last year passengers.As this grapgh also doesnt give us any clue about the relation between the passengers and airfare.
 
@@ -361,7 +361,7 @@ In order to get more precise result we Select a city from the dataset city which
    for bars in wx.containers:
      wx.bar_label(bars)
 ```
-<img src="https://github.com/user-attachments/assets/1e77d7ae-f011-4c5f-807c-17cac525b829" width="1200" height="1200">
+<img src="https://github.com/user-attachments/assets/1e77d7ae-f011-4c5f-807c-17cac525b829" width="1000" height="500">
 
 ```python
    #Filtering the mean value of fares for the particular year
@@ -393,7 +393,7 @@ In order to get more precise result we Select a city from the dataset city which
    for bars in sx.containers:
       sx.bar_label(bars)
 ```
-<img src="https://github.com/user-attachments/assets/2b2d7469-136f-45f2-8f19-7547d83487b8" width="1200" height="1200">
+<img src="https://github.com/user-attachments/assets/2b2d7469-136f-45f2-8f19-7547d83487b8" width="1000" height="500">
 
 As This graph also prove that there is no relation with the airfare and passenger's count.
 
