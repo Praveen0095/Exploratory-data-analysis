@@ -19,7 +19,7 @@ Welcome to the Exploratory Data Analysis (EDA) project! This repository contains
 ## Introduction
 In this project, we perform exploratory data analysis on a dataset containing information about airfare and passenger numbers. The aim is to understand the relationship between these variables and identify key trends and insights.
 
- <img src="https://github.com/user-attachments/assets/34c945c4-e050-40a3-b0cc-0173c1fe3fb3"  width="1000" height="500">
+ <img src="https://github.com/user-attachments/assets/5c2df556-cd4a-4124-a172-533a31a74960"  width="1366" height="600">
 
 
 ## Dataset
