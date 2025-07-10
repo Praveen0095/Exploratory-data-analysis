@@ -1,3 +1,28 @@
+# ✈️ Airfare vs Passenger Behavior: Exploratory Data Analysis
+
+## 📌 Project Overview
+
+This project explores the relationship between **airfare prices** and **passenger numbers** across major U.S. cities using real airline data. Through data cleaning, visualization, and statistical analysis in Python, the goal is to identify whether airfare fluctuations significantly impact travel behavior.
+
+### 🎯 Objective
+
+- Determine if changes in airfare influence passenger volume
+- Analyze trends by city and year
+- Provide actionable business insights for airline pricing strategy
+
+---
+
+## 🛠️ Tools & Technologies
+
+| Category       | Stack Used |
+|----------------|------------|
+| Programming    | Python (Pandas, Matplotlib, Seaborn) |
+| Data Handling  | CSV, DataFrames |
+| Visualization  | Matplotlib, Seaborn |
+| Reporting      | Jupyter Notebook |
+| Data Source    | [Kaggle - Consumer Airfare Report](https://www.kaggle.com/datasets) |
+
+---
 
 ---
 
