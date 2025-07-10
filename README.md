@@ -24,7 +24,6 @@ This project explores the relationship between **airfare prices** and **passenge
 
 ---
 
----
 
 ## 🔍 Dataset Description
 
