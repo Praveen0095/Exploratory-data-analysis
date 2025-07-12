@@ -77,7 +77,7 @@ This project explores the relationship between **airfare prices** and **passenge
 ![Passengers by Year](Plots/ComparisonofPassengerbyyear.png)
 
 ### 💰 Fare Trend by Year (New Orleans)
-![Fares by Year](Plots/ComparisonofFarebyyear.png)
+![Fares by Year](Plots/ComparisonofFaresbyyear.png)
 
 ---
 
