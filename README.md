@@ -118,7 +118,6 @@ Segment	Description
 ## 🔮 Future Enhancements
 
 - **Predictive Modeling**: Use regression or time-series to forecast fare elasticity
-- **Market Segmentation**: Split analysis by business vs leisure travelers
 - **External Factors**: Add fuel cost, holidays, competitor pricing
 - **Interactive Dashboard**: Migrate insights to Power BI or Tableau
 
