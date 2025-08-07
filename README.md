@@ -92,7 +92,7 @@ By plotting and clustering data points using average fare on one axis and passen
 | 3.| Premium Low  |	High fares but low passenger counts. These routes may serve niche or luxury markets and may require service optimization.|
 | 4.| Budget Low	 | Low fares and low volume — potentially underperforming routes that may not be profitable without optimization or marketing.|
 
-![AirFare VS Passenger Volume]([(Plots/Market_segmentation.png])
+![AirFare VS Passenger Volume](Plots/Market_segmentation.png)
 
 ---
 
