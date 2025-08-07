@@ -91,7 +91,8 @@ By plotting and clustering data points using average fare on one axis and passen
 | 2.| Budget High  |	High passenger volume with low fares. These are price-sensitive, competitive markets — often targeted by low-cost carriers.|
 | 3.| Premium Low  |	High fares but low passenger counts. These routes may serve niche or luxury markets and may require service optimization.|
 | 4.| Budget Low	 | Low fares and low volume — potentially underperforming routes that may not be profitable without optimization or marketing.|
-   
+
+![AirFare VS Passenger Volume]([(Plots/Market_segmentation.png])
 
 ---
 
