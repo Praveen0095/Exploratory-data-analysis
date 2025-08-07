@@ -61,15 +61,6 @@ This project explores the Consumer Airfare Data Analysis & Market Segmentation! 
 
 ---
 
-## 📌 Business Insights
-
-- Cities with high average fares (e.g. DC, LA) still maintained steady passenger counts
-- Passenger volume increased over years despite slight fare hikes
-- Pricing alone may not drive travel behavior — other factors (service, necessity, route demand) likely play a role
-- Market segmentation revealed distinct customer groups based on fare and Passeneger Volume for targeted strategies.
-
----
-
 ## 📊 Visual Highlights
 
 ### 📊 Average Fare by City (Current vs Last Year)
@@ -101,6 +92,18 @@ By plotting and clustering data points using average fare on one axis and passen
 | 3.| Premium Low  |	High fares but low passenger counts. These routes may serve niche or luxury markets and may require service optimization.|
 | 4.| Budget Low	 | Low fares and low volume — potentially underperforming routes that may not be profitable without optimization or marketing.|
    
+
+---
+
+## 📌 Business Insights
+
+- Cities with high average fares (e.g. DC, LA) still maintained steady passenger counts
+- Passenger volume increased over years despite slight fare hikes
+- Pricing alone may not drive travel behavior — other factors (service, necessity, route demand) likely play a role
+- Market segmentation revealed distinct customer groups based on fare and Passeneger Volume for targeted strategies.
+- High-Volume + High-Fare routes represent high-yield opportunities and may justify additional investment in service or premium offerings.
+- Low-Fare + High-Volume routes show that volume-driven pricing strategies are working and these markets are highly elastic.
+- Low-Volume segments, regardless of fare, may need review for sustainability, potential rerouting, or better marketing.
 
 ---
 
