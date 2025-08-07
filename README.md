@@ -91,6 +91,7 @@ Passenger Volume – the number of travelers
 This segmentation allows us to categorize city pairs (or routes) into strategic market segments based on cost sensitivity and traffic demand.
 
 🎯 Segmentation Logic
+
 By plotting and clustering data points using average fare on one axis and passenger volume on the other, we identified four primary segments:
 
 Segment	Description
