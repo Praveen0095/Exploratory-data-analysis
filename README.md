@@ -94,11 +94,12 @@ This segmentation allows us to categorize city pairs (or routes) into strategic 
 
 By plotting and clustering data points using average fare on one axis and passenger volume on the other, we identified four primary segments:
 
-Segment	Description
-1. Premium High-Volume	High passenger volume and high average fares. These routes are strong revenue generators and likely include major business travel corridors.
-2. Budget High-Volume	High passenger volume with low fares. These are price-sensitive, competitive markets — often targeted by low-cost carriers.
-3. Premium Low-Volume	High fares but low passenger counts. These routes may serve niche or luxury markets and may require service optimization.
-4. Budget Low-Volume	Low fares and low volume — potentially underperforming routes that may not be profitable without optimization or marketing.
+|    | Segment |	Description|
+|----|---------|-------------|
+| 1.| Premium High |	High passenger volume and high average fares. These routes are strong revenue generators and likely include major business travel corridors.|
+| 2.| Budget High  |	High passenger volume with low fares. These are price-sensitive, competitive markets — often targeted by low-cost carriers.|
+| 3.| Premium Low  |	High fares but low passenger counts. These routes may serve niche or luxury markets and may require service optimization.|
+| 4.| Budget Low	 | Low fares and low volume — potentially underperforming routes that may not be profitable without optimization or marketing.|
    
 
 ---
