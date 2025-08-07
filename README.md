@@ -1,14 +1,15 @@
-# ✈️ Airfare vs Passenger Behavior: Exploratory Data Analysis
+# ✈️ Consumer Airfare Data Analysis & Market Segmentation
 
 ## 📌 Project Overview
 
-This project explores the relationship between **airfare prices** and **passenger numbers** across major U.S. cities using real airline data. Through data cleaning, visualization, and statistical analysis in Python, the goal is to identify whether airfare fluctuations significantly impact travel behavior.
+This project explores the Consumer Airfare Data Analysis & Market Segmentation! This notebook goes beyond basic analysis to deliver actionable insights through exploratory data analysis (EDA) and market segmentation of airfare trends across the U.S.
 
 ### 🎯 Objective
 
-- Determine if changes in airfare influence passenger volume
-- Analyze trends by city and year
-- Provide actionable business insights for airline pricing strategy
+- Clean and preprocess airfare data
+- Visualize airfare and passenger trends over the years
+- Analyze patterns and draw meaningful conclusions about pricing and travel behavior
+- Segment the air travel market based on Airfare and Passenger Volume
 
 ---
 
@@ -65,6 +66,7 @@ This project explores the relationship between **airfare prices** and **passenge
 - Cities with high average fares (e.g. DC, LA) still maintained steady passenger counts
 - Passenger volume increased over years despite slight fare hikes
 - Pricing alone may not drive travel behavior — other factors (service, necessity, route demand) likely play a role
+- Market segmentation revealed distinct customer groups based on fare and Passeneger Volume for targeted strategies.
 
 ---
 
