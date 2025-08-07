@@ -82,12 +82,11 @@ This project explores the Consumer Airfare Data Analysis & Market Segmentation! 
 ![Fares by Year](Plots/ComparisonofFaresbyyear.png)
 
 ---
-Market Segmentation Based on Average Fare & Passenger Volume
+## Market Segmentation Based on Average Fare & Passenger Volume
+
 To better understand market dynamics, we performed segmentation using two key metrics:
-
-Average Fare – the cost to the consumer
-
-Passenger Volume – the number of travelers between origin-destination pairs
+Average Fare – the cost of Airfare
+Passenger Volume – the number of travelers 
 
 This segmentation allows us to categorize city pairs (or routes) into strategic market segments based on cost sensitivity and traffic demand.
 
