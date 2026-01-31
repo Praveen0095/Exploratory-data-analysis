@@ -118,6 +118,37 @@ By plotting and clustering data points using average fare on one axis and passen
 | Trend                      | Passengers ↑ even as Fares ↑ slightly |
 | Tool Used for Analysis     | Python, Jupyter, Seaborn |
 
+
+Key Findings:
+1. Model Fit (R-squared: 0.047)
+R-squared is 0.047 (4.7%) — this is very low. It means airfare alone explains only 4.7% of the variation in passenger volume. Translation: airfare is NOT a strong predictor of passenger count on its own. There are other factors driving demand (seasonality, route, competition, etc.).
+
+3. The Airfare Coefficient: -1.3173
+ It means:
+
+For every 1% increase in airfare, passenger volume increases by 1.32% (approximately)
+
+The coefficient is positive 1.3173, not negative.
+That completely changes the interpretation:
+  A positive coefficient means: For every 1% increase in airfare, passenger volume increases by 1.32%.
+  This is counterintuitive and unusual — it suggests:
+
+  Higher fares are associated with MORE passengers (not fewer)
+  This could indicate:
+
+    Premium/popular routes where people fly regardless of price
+    Seasonal effect (high-demand periods have both higher fares AND more passengers)
+    Reverse causality (high demand drives prices up, not vice versa)
+    Missing variables distorting the relationship 
+
+The coefficient is statistically significant (p-value = 0.000), so this relationship is real, not random
+
+For every 1% increase in passenger volume, airfare increases by 0.76%
+
+
+3. Statistical Significance (p-value: 3.57e-85)
+The F-statistic p-value is essentially 0, meaning the overall model is highly significant. Even though R² is low, the airfare-passenger relationship found here is definitely real.
+
 ---
 
 ## 🔮 Future Enhancements
