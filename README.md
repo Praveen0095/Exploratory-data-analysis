@@ -124,26 +124,24 @@ By plotting and clustering data points using average fare on one axis and passen
 Key Findings:
 1. Airfare is NOT a strong predictor of passenger count on its own. There are other factors driving demand (seasonality, route, competition, etc.).
 
-2. For every 1% increase in airfare, passenger volume increases by 1.32% (approximately)
+2. For every 1% increase in airfare, passenger volume increases by 1.32% (approximately).For every 1% increase in passenger volume, airfare increases by 0.76%
 
-   For every 1% increase in airfare, passenger volume increases by 1.32%.
+   
    This is counterintuitive and unusual — it suggests:
 
-  Higher fares are associated with MORE passengers (not fewer)
-  This could indicate:
-
-    Premium/popular routes where people fly regardless of price
-    Seasonal effect (high-demand periods have both higher fares AND more passengers)
-    Reverse causality (high demand drives prices up, not vice versa)
-    Missing variables distorting the relationship 
+     Higher fares are associated with MORE passengers (not fewer)
+     This could indicate:
+   
+       Premium/popular routes where people fly regardless of price
+       Seasonal effect (high-demand periods have both higher fares AND more passengers)
+       Reverse causality (high demand drives prices up, not vice versa)
+       Missing variables distorting the relationship 
 
 The coefficient is statistically significant (p-value = 0.000), so this relationship is real, not random
 
-For every 1% increase in passenger volume, airfare increases by 0.76%
 
 
-3. Statistical Significance (p-value: 3.57e-85)
-The F-statistic p-value is essentially 0, meaning the overall model is highly significant. Even though R² is low, the airfare-passenger relationship found here is definitely real.
+
 
 ---
 
