@@ -59,6 +59,8 @@ This project explores the Consumer Airfare Data Analysis & Market Segmentation! 
 - Calculated Pearson correlation between airfare and passengers
 - Found a **weak positive correlation** (0.17) suggesting limited dependency
 
+### 4. Statstical Analysis:
+- Analyzed Linear dependencies across Airfare and passengers
 ---
 
 ## 📊 Visual Highlights
@@ -120,18 +122,12 @@ By plotting and clustering data points using average fare on one axis and passen
 
 
 Key Findings:
-1. Model Fit (R-squared: 0.047)
-R-squared is 0.047 (4.7%) — this is very low. It means airfare alone explains only 4.7% of the variation in passenger volume. Translation: airfare is NOT a strong predictor of passenger count on its own. There are other factors driving demand (seasonality, route, competition, etc.).
+1. Airfare is NOT a strong predictor of passenger count on its own. There are other factors driving demand (seasonality, route, competition, etc.).
 
-3. The Airfare Coefficient: -1.3173
- It means:
+2. For every 1% increase in airfare, passenger volume increases by 1.32% (approximately)
 
-For every 1% increase in airfare, passenger volume increases by 1.32% (approximately)
-
-The coefficient is positive 1.3173, not negative.
-That completely changes the interpretation:
-  A positive coefficient means: For every 1% increase in airfare, passenger volume increases by 1.32%.
-  This is counterintuitive and unusual — it suggests:
+   For every 1% increase in airfare, passenger volume increases by 1.32%.
+   This is counterintuitive and unusual — it suggests:
 
   Higher fares are associated with MORE passengers (not fewer)
   This could indicate:
